@@ -1,0 +1,938 @@
+@import url(css/reset.css);		/* Resets html elements */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab); /* Installs a webfont ----->	font-family: 'Josefin Slab', serif; */
+
+body { margin: 0; background-color:#fafafa; font-family: DFKai-sb,"Source Sans Pro","sans-serif";}
+
+
+.pop4font
+{
+	color:#45463d;
+}
+
+.pop4width
+{
+	width:25px;
+}
+
+.pushmenu { /*this is the nav*/
+  background: #e5ecef;
+  text-align: center;
+  width: 300px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+  overflow: auto;
+}
+
+.pushmenu h3 {
+  color: #f1f1f1;
+  font-size: 1.3em;
+  font-weight: 400;
+  padding: 15px 25px;
+  margin: 0;
+  background: #333;
+  height: 16px;
+}
+
+.links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 25%;
+  width: 60%;
+}
+
+.links li { margin-top: 30px; }
+
+.links li a {
+  position: relative;
+  display: block; /* drops the nav vertically*/
+  color: #f1f1f1;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 14px;
+}
+
+.links li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 20px;
+  bottom: -5px;
+  width: 0;
+  height: 4px;
+  background-color: #f1f1f1;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.links li a:hover:after { width: 70%; }
+
+.links li a:active { color: #dbdbdb; }
+
+.pushmenu-left { left: -300px; }
+
+.pushmenu-left.pushmenu-open { left: 0;}
+
+.pushmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+  
+}
+
+.pushmenu-push-toright { left: 300px; }
+
+/*Transition*/
+
+.pushmenu, .pushmenu-push {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#nav_list {
+  background: url(icon_nav.png) no-repeat left top;
+  cursor: pointer;
+  height: 27px;
+  width: 33px;
+  text-indent: -99999em;
+}
+
+nav-list.active { background-position: -331px top; }
+
+.buttonset {
+  background: #21c1c9;
+  height: 16px;
+  padding: 10px 20px 20px;
+}
+
+section.content {
+  padding: 10px 20px;
+ 
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+/* Base Styles */
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  position: relative;
+}
+#cssmenu {
+  border-bottom: 4px solid #656659;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  
+}
+#cssmenu a {
+  line-height: 1.8;
+}
+#cssmenu > ul > li:first-child {
+  background: #66665e;
+  background: -moz-linear-gradient(#66665e 0%, #45463d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66665e), color-stop(100%, #45463d));
+  background: -webkit-linear-gradient(#66665e 0%, #45463d 100%);
+  background: linear-gradient(#66665e 0%, #45463d 100%);
+  border: 1px solid #45463d;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+#cssmenu > ul > li:first-child > a {
+  padding: 15px 10px;
+  background: url(menu_images/pattern.png) top left repeat;
+  border: none;
+  border-top: 1px solid #818176;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 300; 
+  text-shadow: 0 -1px 1px #000000;
+}
+#cssmenu > ul > li:first-child > a > span {
+  padding: 0;
+}
+#cssmenu > ul > li:first-child:hover {
+  background: #66665e;
+  background: -moz-linear-gradient(#66665e 0%, #45463d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66665e), color-stop(100%, #45463d));
+  background: -webkit-linear-gradient(#66665e 0%, #45463d 100%);
+  background: linear-gradient(#66665e 0%, #45463d 100%);
+}
+
+#cssmenu > ul > li {
+  background: #e94f31;
+  background: -moz-linear-gradient(#e94f31 0%, #d13516 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e94f31), color-stop(100%, #d13516));
+  background: -webkit-linear-gradient(#e94f31 0%, #d13516 100%);
+  background: linear-gradient(#e94f31 0%, #d13516 100%);
+}
+#cssmenu > ul > li:hover {
+  background: #e84323;
+  background: -moz-linear-gradient(#e84323 0%, #c33115 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e84323), color-stop(100%, #c33115));
+  background: -webkit-linear-gradient(#e84323 0%, #c33115 100%);
+  background: linear-gradient(#e84323 0%, #c33115 100%);
+}
+#cssmenu > ul > li > a {
+  font-size: 1.5em;
+  display: block;
+  background: url(menu_images/pattern.png) top left repeat;
+  color: #ffffff;
+  border: 1px solid #ba2f14;
+  border-top: none;
+  text-shadow: 0 -1px 1px #751d0c;
+  height:50px;
+}
+#cssmenu > ul > li > a > span {
+  display: block;
+  padding: 12px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#cssmenu > ul > li > a:hover {
+  text-decoration: none;
+}
+#cssmenu > ul > li.active {
+  border-bottom: none;
+}
+#cssmenu > ul > li.has-sub > a span {
+  background: url(menu_images/icon_plus.png) 96% center no-repeat;
+}
+#cssmenu > ul > li.has-sub.active > a span {
+  background: url(menu_images/icon_minus.png) 96% center no-repeat;
+}
+
+#cssmenu ul ul {
+  display: none;
+  background: #fff;
+  border-right: 1px solid #a2a194;
+  border-left: 1px solid #a2a194;
+}
+#cssmenu ul ul li {
+  padding: 0;
+  border-bottom: 1px solid #d4d4d4;
+  border-top: none;
+  background: #f7f7f7;
+  background: -moz-linear-gradient(#f7f7f7 0%, #ececec 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #ececec));
+  background: -webkit-linear-gradient(#f7f7f7 0%, #ececec 100%);
+  background: linear-gradient(#f7f7f7 0%, #ececec 100%);
+}
+#cssmenu ul ul li:last-child {
+  border-bottom: none;
+}
+#cssmenu ul ul a {
+  padding: 10px 10px 10px 25px;
+  display: block;
+  color: #676767;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+#cssmenu ul ul a:before {
+  content: '\00BB';
+  position: absolute;
+  left: 10px;
+  color: #e94f31;
+}
+#cssmenu ul ul a:hover {
+  color: #e94f31;
+}
+
+/*
+	Author:	Munawar Ahmed Mohammed
+	Website:	www.mobifreaks.com
+	Demo URI:	http://www.mobifreaks.com/u/6
+	Article URI:	http://www.mobifreaks.com/u/5
+*/
+
+header h1,
+footer h1{
+	font-family: 'Josefin Slab', serif;
+	color:#aaaaaa;
+	font-size:3em;
+}
+header,footer{
+	background:#5d5d5d;
+	padding:40px 30px;
+	text-align:center;
+	-moz-box-shadow:inset 0 0 20px #000000;
+	-webkit-box-shadow:inset 0 0 20px #000000;
+	box-shadow:inset 0 0 20px #000000;
+}
+header{
+	border-bottom:1px solid #dddddd;
+}
+footer{
+	border-top:1px solid #dddddd;
+}
+/* ----- Article styling ----- */
+article{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	padding:0px;
+}
+article h1,h2,h3,h4{
+	font-family: 'Josefin Slab', serif;
+	font-weight:normal;
+	color:#ff4800;
+}
+article h1{
+	font-size:2.6em;
+}
+article h2{
+	font-size:2em;
+}
+article h3{
+	font-size:1.6em;
+}
+article h4{
+	font-size:1.2em;
+}
+article figcaption,
+article figure,
+article dd,
+article dt,
+article pre,
+article p,
+article h1,
+article h2,
+article h3,
+article h4{
+	padding:10px 0;
+}
+article p,
+article ol,
+article ul,
+article dd,
+article figcaption,
+.column{
+	line-height:1.8em;
+}
+article ol,ul{
+	margin:0 0 0 30px;
+	padding:10px;
+}
+article ol{
+	list-style:decimal;
+}
+article ul{
+	list-style:disc;
+}
+article pre{
+	margin:0 0 0 20px;
+}
+article code{
+	font-family:"Courier New", Courier, monospace;
+	font-size:12px;
+	line-height:1.6em;
+}
+article blockquote{
+	border-left:5px solid #dddddd;
+	margin:10px 0 10px 20px;
+	background:#f9f9f9;
+	font-style:italic;
+	padding:10px;
+}
+article b,strong{
+	padding:5px;
+	background:#ffdbcd;
+}
+article em{
+	font-style:italic;
+}
+article a{
+	color:#d86a3f;
+	text-decoration:transparent;
+	border-bottom:1px solid;
+}
+article a:hover{
+	color:#5d5d5d;
+}
+article dl{
+	margin:10px 0 10px 20px;
+}
+article dt{
+	font-weight:bold;
+}
+article figure{
+	text-align:center;
+}
+article figure img{
+	max-width:100%;
+}
+article figcaption{
+	color:#8d8d8d;
+}
+
+/* seo friendly tables */
+.table{
+	display:table;	/* Defines a Table */
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	border-bottom:2px solid #dddddd;
+	color:#8d8d8d;
+	margin:10px 0;
+}
+.table-head{
+	 display: table-header-group; /* Defines a table header group */
+}
+.table-head .column{ /* Column inside the table-head */
+	background:#333333;
+	color:#fcffff;
+	border-right:1px solid #5d5d5d;
+	border-bottom:none;
+}
+.table-head .column:hover{ /* Column hover inside the table-head */
+	background:#222222;
+}
+.row{
+	display:table-row; /* Defines a table row */
+}
+.row .column:nth-child(1){ /* First column in a row */
+	border-left:1px solid #eeeeee;
+}
+.row:last-child .column{  /* column in a last row */
+	border-bottom:none;
+}
+.column{
+	display:table-cell; /* Defines a table cell */
+	padding:10px 25px;
+	border-bottom:1px solid #eeeeee;
+	border-right:1px solid #eeeeee;
+	/*border:1px solid #a6525;*/
+}
+.column:hover{
+	background:#f9f9f9;
+}
+/* Responsive table */
+@media all and (max-width: 640px){
+	.table,
+	.row,
+	.column,
+	.column:before{
+		display:block;	/* Converts a table, table row, table column and table column:before into a block element */
+	}
+	.table,
+	.row .column:last-child{
+		border-bottom:none;
+	}
+	.table-head{
+		position:absolute;	/* Hides table head but not using display none */
+		top:-1000em;
+		left:-1000em;
+	}
+	.row{
+		border:1px solid #eeeeee;
+		border-top:2px solid #dddddd;
+		border-bottom:2px solid #dddddd;
+		margin:20px 0;
+	}
+	.row .column:nth-child(1){ /* first column of the row */
+		border-left:none;
+	}
+	.row .column:last-child{ /* last column of the row */
+		border-right:none;
+	}
+	.row:last-child .column,
+	.column{ /* Column in the last row and column */
+		border-bottom:1px solid #eeeeee;
+	}
+	.column:before{ /* prints the value of data-label attribute before the column data */
+		font-weight:bold;
+		padding-right:20px;
+		font-size:12px;
+		content:" "attr(data-label)" //";	/* call the attribute value of data-label and adds a string // */
+	}
+	
+	#popup{
+		 margin-left:80px;
+	}
+	
+	#popup3{
+		 margin-left:100px;
+	}
+	#popup4{
+		 margin-left:150px;
+	}
+}
+
+/* Responsive table */
+@media all and (min-width: 770px){
+#popup{
+		 margin-left:400px;
+	}
+	
+	#popup3{
+		 margin-left:600px;
+	}
+	#popup4{
+		 margin-left:500px;
+	}
+}
+
+
+.btn {
+ 	background: rgb(191,210,85); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(191,210,85,1) 0%, rgba(142,185,42,1) 50%, rgba(114,170,0,1) 51%, rgba(158,203,45,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(191,210,85,1) 0%,rgba(142,185,42,1) 50%,rgba(114,170,0,1) 51%,rgba(158,203,45,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(191,210,85,1) 0%,rgba(142,185,42,1) 50%,rgba(114,170,0,1) 51%,rgba(158,203,45,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
+  	font-family: Arial;
+  	border-radius: 5px;
+  	color: #ffffff;
+  	font-size:1.0em;
+  	padding: 5px 15px 5px 20px;
+  	text-decoration: none;
+  	border: none;
+  	text-shadow:none;
+}
+
+.btn:hover {
+  	background: rgb(183,222,237); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  	text-decoration: none;
+  	color: #ffffff;
+  	text-shadow:none;
+}
+
+.btn1 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+copy
+}
+
+.btn1:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#499bea+18,207ce5+100&0.53+16,1+100 */
+background: -moz-linear-gradient(left, rgba(73,155,234,0.53) 16%, rgba(73,155,234,0.54) 18%, rgba(32,124,229,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(73,155,234,0.53) 16%,rgba(73,155,234,0.54) 18%,rgba(32,124,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(73,155,234,0.53) 16%,rgba(73,155,234,0.54) 18%,rgba(32,124,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87499bea', endColorstr='#207ce5',GradientType=1 ); /* IE6-9 */
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow:none;
+}
+
+
+.btn2 {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#599bb3;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding: 1px 9px 8px 10px;
+	text-decoration:none;
+	height:15px;
+}
+.btn2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+	background-color:#408c99;
+}
+.btn2:active {
+	position:relative;
+	top:1px;
+}
+
+/*--新增節目單---*/
+#popup4{ /* 浮動視窗的css語法 */
+    font-size: 20px;
+    display: none;
+ 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#386b4c+0,258e62+100 */
+	background: rgb(56,107,76); /* Old browsers */
+	background: -moz-linear-gradient(45deg, rgba(56,107,76,1) 0%, rgba(37,142,98,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgba(56,107,76,1) 0%,rgba(37,142,98,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgba(56,107,76,1) 0%,rgba(37,142,98,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#386b4c', endColorstr='#258e62',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    width:500px;
+    padding: 25px 15px;
+    bottom: 150px;
+    position: fixed;
+    z-index: 2;
+    -moz-box-shadow: -2px 3px 25px #a9a9a9;
+    -webkit-box-shadow: -2px 3px 25px #a9a9a9;
+    box-shadow: -2px 3px 25px #a9a9a9;
+   	color:#ffffff;
+  
+}
+
+.cross4 fieldset { font-size: 20px;}
+
+
+
+.cross4{ /* 浮動視窗的叉叉鍵 */
+    background-color: #4a4f51;
+    margin-right:5px;
+    margin-left: 2px;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.cross4:hover{ /* 滑鼠移到叉叉鍵的效果 */
+    background-color: #dcdcdc;
+}
+
+.closebutton4 { /* 浮動視窗的取消鍵 */
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    float: center;
+}
+
+.closebutton4:hover{ /* 滑鼠移到取消鍵的效果 */
+   /* background-color: #dcdcdc;*/
+   }
+
+.goquestion4{ /* 浮動視窗的填答鍵 */
+    display: inline-block;
+    margin-left: 5px;
+    padding: 6px;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    cursor: pointer;
+    float: center;
+}
+
+.goquestion4:hover{  /* 滑鼠移到填答鍵的效果 */
+    /*background-color: #6699cc;*/
+}
+
+.goquestion4 a:link { /* 填答鍵的連結 */
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+/*--新增節目單---*/
+#popup3{ /* 浮動視窗的css語法 */
+    font-size: 20px;
+    display: none;
+ 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#386b4c+0,258e62+100 */
+	background: rgb(56,107,76); /* Old browsers */
+	background: -moz-linear-gradient(45deg, rgba(56,107,76,1) 0%, rgba(37,142,98,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgba(56,107,76,1) 0%,rgba(37,142,98,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgba(56,107,76,1) 0%,rgba(37,142,98,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#386b4c', endColorstr='#258e62',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    width:310px;
+    padding: 25px 15px;
+    bottom: 100px;
+    position: fixed;
+    z-index: 2;
+    -moz-box-shadow: -2px 3px 25px #a9a9a9;
+    -webkit-box-shadow: -2px 3px 25px #a9a9a9;
+    box-shadow: -2px 3px 25px #a9a9a9;
+   	color:#ffffff;
+  
+}
+
+.cross3 fieldset { font-size: 20px;}
+
+
+
+.cross3{ /* 浮動視窗的叉叉鍵 */
+    background-color: #4a4f51;
+    margin-right:5px;
+    margin-left: 290px;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.cross3:hover{ /* 滑鼠移到叉叉鍵的效果 */
+    background-color: #dcdcdc;
+}
+
+.closebutton3 { /* 浮動視窗的取消鍵 */
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    float: center;
+}
+
+.closebutton3:hover{ /* 滑鼠移到取消鍵的效果 */
+   /* background-color: #dcdcdc;*/
+   }
+
+.goquestion3{ /* 浮動視窗的填答鍵 */
+    display: inline-block;
+    margin-left: 5px;
+    padding: 6px;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    cursor: pointer;
+    float: center;
+}
+
+.goquestion3:hover{  /* 滑鼠移到填答鍵的效果 */
+    /*background-color: #6699cc;*/
+}
+
+.goquestion3 a:link { /* 填答鍵的連結 */
+    color: #FFF;
+    text-decoration: none;
+}
+
+/*--新增節目單---*/
+#popup{ /* 浮動視窗的css語法 */
+    font-size: 20px;
+    display: none;
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#386b4c+0,258e62+100 */
+background: rgb(56,107,76); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(56,107,76,1) 0%, rgba(37,142,98,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(56,107,76,1) 0%,rgba(37,142,98,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(56,107,76,1) 0%,rgba(37,142,98,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#386b4c', endColorstr='#258e62',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+     width:510px;
+     bottom:100px;
+    padding: 25px 15px;
+    position: fixed;
+    z-index: 2;
+    -moz-box-shadow: -2px 3px 25px #a9a9a9;
+    -webkit-box-shadow: -2px 3px 25px #a9a9a9;
+    box-shadow: -2px 3px 25px #a9a9a9;
+   color:#ffffff;
+  	height: 500px;
+    overflow-x:auto;
+}
+
+.cross fieldset { font-size: 20px;}
+
+
+
+.cross{ /* 浮動視窗的叉叉鍵 */
+    background-color: #4a4f51;
+    margin-right:5px;
+    margin-left: 450px;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.cross:hover{ /* 滑鼠移到叉叉鍵的效果 */
+    background-color: #dcdcdc;
+}
+
+.closebutton { /* 浮動視窗的取消鍵 */
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    float: center;
+}
+
+.closebutton:hover{ /* 滑鼠移到取消鍵的效果 */
+   /* background-color: #dcdcdc;*/
+   }
+
+.goquestion{ /* 浮動視窗的填答鍵 */
+    display: inline-block;
+    margin-left: 5px;
+    padding: 6px;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    cursor: pointer;
+    float: center;
+}
+
+.goquestion:hover{  /* 滑鼠移到填答鍵的效果 */
+    /*background-color: #6699cc;*/
+}
+
+.goquestion a:link { /* 填答鍵的連結 */
+    color: #FFF;
+    text-decoration: none;
+}
+
+/*--新增節目單---*/
+#popup1{ /* 浮動視窗的css語法 */
+    font-size: 20px;
+    display: none;
+ 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#386b4c+0,258e62+100 */
+background: rgba(255,255,255,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(249,249,249,1) 40%, rgba(246,246,246,1) 63%, rgba(237,237,237,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(40%, rgba(249,249,249,1)), color-stop(63%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(249,249,249,1) 40%, rgba(246,246,246,1) 63%, rgba(237,237,237,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(249,249,249,1) 40%, rgba(246,246,246,1) 63%, rgba(237,237,237,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(249,249,249,1) 40%, rgba(246,246,246,1) 63%, rgba(237,237,237,1) 100%);
+background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(249,249,249,1) 40%, rgba(246,246,246,1) 63%, rgba(237,237,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );    
+bottom:100px;
+    padding: 25px 15px 0px;
+    position: fixed;
+    z-index: 2;
+    -moz-box-shadow: -2px 3px 25px #a9a9a9;
+    -webkit-box-shadow: -2px 3px 25px #a9a9a9;
+    box-shadow: -2px 3px 25px #a9a9a9;
+   	color:#ffffff;
+  	height: 500px;
+    overflow-x:auto;
+    margin-left:470px;
+}
+
+.cross1 fieldset { font-size: 20px;}
+
+.cross1{ /* 浮動視窗的叉叉鍵 */
+    background-color: #4a4f51;
+    margin-right:5px;
+    margin-left: 450px;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.cross1:hover{ /* 滑鼠移到叉叉鍵的效果 */
+    background-color: #dcdcdc;
+}
+
+.closebutton1 { /* 浮動視窗的取消鍵 */
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    float: center;
+}
+
+.closebutton1:hover{ /* 滑鼠移到取消鍵的效果 */
+   /* background-color: #dcdcdc;*/
+}
+
+.goquestion1{ /* 浮動視窗的填答鍵 */
+    display: inline-block;
+    margin-left: 5px;
+    padding: 6px;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    cursor: pointer;
+    float: center;
+}
+
+.goquestion1:hover{  /* 滑鼠移到填答鍵的效果 */
+    /*background-color: #6699cc;*/
+}
+
+.goquestion1 a:link { /* 填答鍵的連結 */
+    color: #FFF;
+    text-decoration: none;
+}
+
+.fsel{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bfd255+0,72aa00+0,72aa00+0,8eb92a+69,9ecb2d+100 */
+background: rgb(191,210,85); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(191,210,85,1) 0%, rgba(114,170,0,1) 0%, rgba(114,170,0,1) 0%, rgba(142,185,42,1) 69%, rgba(158,203,45,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(191,210,85,1) 0%,rgba(114,170,0,1) 0%,rgba(114,170,0,1) 0%,rgba(142,185,42,1) 69%,rgba(158,203,45,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(191,210,85,1) 0%,rgba(114,170,0,1) 0%,rgba(114,170,0,1) 0%,rgba(142,185,42,1) 69%,rgba(158,203,45,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
+padding:5px 0px 5px 0px;
+margin:10px 0px 10px 0px;
+display:none;
+}
+
+.editor{
+	width:70%;
+}
+
+#seat{
+	padding-top:10px;
+}
+
+.gridly {
+    position: relative;
+    width: 960px;
+}
+
+.brick{
+	width: 70px;
+    height: 80px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.brick.small {
+  
+    background-color:#c0c0c0;
+   
+}
+
+.brick.smallinuse {
+    background-color:#ff0000;
+   
+}
+
+.brick.smalltmp {
+    background-color:#8080ff;
+}
+
+.brick.smallsel {
+    background-color:#ff8000;
+   
+}
+
+.grey{
+	background-color:#c0c0c0;
+}
+
+.red{
+	background-color:#ff0000;
+}
+
+.purple
+{
+	background-color:#8080ff;
+}
+.orange{
+	background-color:#ff8000;
+}
+
+.fancyTable{
+	background-color:#ff8000;
+}
+	

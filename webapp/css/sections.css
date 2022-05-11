@@ -1,0 +1,751 @@
+.sections{
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    margin: auto;}
+
+    #A1,#A2{background-color: #3c65be;}
+    #B,#B1,#B2,#B3,#B4{background-color: #00b4a8;}
+    #C1,#C2{background-color: #ff8b71;}
+/*Nav Adjustment*/
+
+#nav-logo {
+    background-color: rgba(255,255,255,.8);
+    width: 33%;}
+
+    #A1 #nav-logo, #A2 #nav-logo{box-shadow: 0px 0px 26px 11px #3255b3;}
+    #B #nav-logo, #B1 #nav-logo, #B2 #nav-logo, #B3 #nav-logo, #B4 #nav-logo{box-shadow: 0px 0px 26px 11px #00ac9d;}
+    #C1 #nav-logo, #C2 #nav-logo{box-shadow: 0px 0px 26px 11px #ec755a;}
+
+#nav-title {
+    font-size: 29px;
+    letter-spacing: 6px;
+    padding-top: 32px;}
+
+    #A1 #nav-title,  #A2 #nav-title{border-left: 2px solid #4864a3;}
+    #B #nav-title, #B1 #nav-title,  #B2 #nav-title,  #B3 #nav-title,  #B4 #nav-title{border-left: 2px solid #00ac9d;}
+    
+.logo1 {
+    margin: 1% 2%;
+    height: 90px;
+    width: 73%;}
+    #nav-icons-wrap {
+        justify-content: flex-end;}
+#nav-title span {font-size: 21px;}
+#nav-icons-wrap {
+    width: 19%;
+    padding: 0 1% 0 0;}
+#nav-icons-wrap .nav-icons {
+    width: 32%;
+    padding: 2% 0 0;}
+    #nav #time-wrap {
+        width: 57%;
+        text-align: right;
+        padding-top: 56px;}
+        #time-wrap {
+            color: #fff;}
+/*BUTTON*/
+#bottom{
+    height: 136px;
+    display: flex;
+    background-color: rgba(255,255,255,.5);}
+    #A1 #bottom,#A2 #bottom{box-shadow: 0px 0px 26px 11px #3255b3;}
+    #B #bottom,#B1 #bottom,#B2 #bottom,#B3 #bottom,#B4 #bottom,#B4 #bottom,#B4 #bottom{box-shadow: 0px 0px 26px 11px #00ac9d;}
+    #b-l,#b-m,#b-r{
+        display: flex;
+        box-sizing: border-box;}
+    #b-l{
+        width: 35.020833%; 
+        justify-content: space-between;}
+        #B #b-l{width: 32.020833%; }
+        #C1 #b-l{width: 36.020833%; }
+    #b-m{
+        width: 21.833333%;
+        flex-wrap: wrap;
+        padding: 1.5% 0 0 1%;}
+        #C1 #b-m{
+            padding: 1.5% 0 0 2%;}
+    #b-r{
+        width: 42.09375%;}
+        #B1 #b-r{
+            width: 43.09375%;}
+            #B2 #b-r{
+                width: 45.09375%;}
+                #C1 #b-r{
+                    width: 40.09375%;}
+
+    #b-l,#b-m{position: relative;}
+    #b-l::after,#b-m::after{
+        position: absolute;
+        content:"";
+        height: 70%;
+        width: 3px;
+        top: 15%;
+        right: 0;
+        border-radius: 50%;}
+        #A1 #b-l::after,#A1 #b-m::after,
+        #A2 #b-l::after,#A2 #b-m::after
+        {background-color: #2f4e93;}
+        #B #b-l::after,#B #b-m::after,
+        #B1 #b-l::after,#B1 #b-m::after,
+        #B2 #b-l::after,#B2 #b-m::after,
+        #B3 #b-l::after,#B3 #b-m::after,
+        #B4 #b-l::after,#B4 #b-m::after
+        {background-color: #009389;}
+        .c #b-l::after,.c #b-m::after
+        {background-color: #d86a50;}
+
+
+        /*b-l*/
+        #s-n{
+            margin: 2.7% 0 0 7%;
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border-radius: 50%;
+            text-align: center;}
+            #B1 #s-n,#B2 #s-n,#B3 #s-n,#B4 #s-n,#C2 #s-n{margin: 2.7% 0 0 12%;}
+            #C1 #s-n{margin: 2.7% 0 0 11%;}
+            #s-n h1{
+                font-family: "Avenir", "Avenir-Medium";
+                font-size: 85.5px;
+                font-weight: bolder;
+                letter-spacing: 1.7px;
+                color: #3c65be;
+                text-align: center;
+                margin: 7% auto 0;}
+                #A1 #s-n h1,#A2 #s-n h1{color: #3c65be;}
+                #B #s-n h1,#B1 #s-n h1,#B2 #s-n h1,#B3 #s-n h1,#B4 #s-n h1{color: #00b4a8;}
+                .c #s-n h1{color: #ff8b71;}
+                #B1 #s-n h1,#B2 #s-n h1,#B3 #s-n h1,#B4 #s-n h1{ /*圈圈兩個字*/
+                    margin: 19% auto 0;
+                    font-size: 65.5px;}
+                
+                .c #s-n h1{margin: 11% auto 0;}
+                #A1 #s-t,#C1 #s-t{margin: 4.5% 0 0 2%;}/*橫向MAP*/
+                #B1 #s-t{margin: 4.5% 0 0 4%;}/*橫向MAP*/
+                #A2 #s-t,#B #s-t,#B2 #s-t,#B3 #s-t,#B4 #s-t,#C2 #s-t{margin: 4.5% 0 0 5%;}/*直立MAP*/
+
+                #s-t h1{
+                    font-size: 48.5px;
+                    letter-spacing: 7.9px;
+                    text-align: right;
+                    color: #19294c;}
+                    #s-t p{
+                        font-size: 25px;
+                        letter-spacing: 4.7px;
+                        text-align: right;
+                        color: #666666;
+                        line-height: 1.5;}
+                        #s-m span{
+                            width: 152px;
+                            height: 126px;
+                            display: block;
+                            background-size: 107%;}
+                            .a{background-image: url(../images/map/s-ma.png);}
+                            #s-m span.a,#s-m span.c1{ margin: 2px 15px 0 0;}
+                            .a-v{background-image: url(../images/map/s-ma-v.png);}
+                            #s-m span.a-v,#s-m span.b{ margin: 7px 0 0;}
+                            #s-m span.b2, #s-m span.b3, #s-m span.b4,#s-m span.c2{ margin: 7px 5px 0 0;}
+                            #s-m span.b1{ margin: 7px 21px 0 0;}
+                            .b{background-image: url(../images/map/s-mb.png);}
+                            .b1{background-image: url(../images/map/s-mb1.png);}
+                            .b2{background-image: url(../images/map/s-mb2.png);}
+                            .b3{background-image: url(../images/map/s-mb3.png);}
+                            .b4{background-image: url(../images/map/s-mb4.png);}
+                            .c1{background-image: url(../images/map/s-mc.png);}
+                            .c2{background-image: url(../images/map/s-mc-v.png);}
+                            
+            /*b-m*/
+            .state{width: 33%;}
+            .state ul{display: flex;}
+            .small-c{
+                margin: 0 3.5% 0 0;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;}
+                #avl .small-c{background: rgba(255,255,255,.5);}
+                #cpc .small-c{background: #00b4a8;}
+                #slc .small-c{background: #008078;}
+                #usd .small-c{background: #9f73e0;}
+                #rsr .small-c{background: #f4ea62;}
+                #sno .small-c{background: #19294c;}
+                #sno {display: none;}
+
+                #usd,#rsr,#sno{margin-top: -2%;}
+
+                .state ul h5{
+                    font-size: 14.5px;
+                    font-weight: 300;
+                    letter-spacing: 0.7px;
+                    text-align: left;
+                    line-height: 1.55;
+                    color: #333333;}
+                    .state ul p{
+                        font-size: 9.5px;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #666666;}
+                        .number{
+                            font-weight:600;
+                            font-size: 27.5px;
+                            letter-spacing: 0.3px;
+                            text-align: center;
+                            color: #19294c;}
+                #sno{display: none;}
+                        
+/*底部資訊*/
+#b-r {
+    height: 76px;
+    margin: 20px 0 0 2%;}
+    #B1 #b-r,#B2 #b-r,#B3 #b-r,#B4 #b-r{
+        margin: 20px 0 0 1%;}
+    #b-r .bottom-info-list {
+      list-style-type: none;
+      padding: 0;
+        display: flex; }
+      #b-r .bottom-info-list li {
+        display: block;
+        margin-right: 14px; }
+        #b-r .bottom-info-list li ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0; }
+
+          #b-r .bottom-info-list li ul li {
+            display: block; }
+          #b-r .bottom-info-list-cht {
+            color: #231815;
+            margin-top: 25px; }
+          #b-r .big {
+            position: relative;}
+          #b-r .bottom-info-list-eng {
+            margin-top: 8px;}
+            .section-no{
+                width: 207px;
+                top: -5px;
+                position: absolute;
+                font-family:"Avenir-Medium";
+                font-size: 57px;
+                font-weight: 500;
+                letter-spacing: 1.1px;
+                text-align: left;
+                color: #19294c;
+                vertical-align: text-top;}
+            
+                #seat-time ul{
+                    margin-left: 159px;}
+                    #B2 #seat-time ul,#B3 #seat-time ul,#B4 #seat-time ul{
+                        margin-left: 185px;}
+                        #C1 #seat-time ul{
+                            margin-left: 120px;}
+/*Circle*/
+.circle{
+    line-height: 54.4px;
+    font-family: "Avenir-Next-Condensed";
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0.5%;
+    color: #19294c;
+    outline: none;
+    text-align: center;
+    display: block;
+    background: rgba(255,255,255,.5);
+    border: none;
+    border-radius: 50%;
+    width: 54.4px;
+    height: 54.4px;}    
+    .bb .circle{line-height:1.2;}
+    .rsr{background: linear-gradient(-45deg, #fbf79d 30%, #eddd27);}
+    .usd{background: linear-gradient(-45deg, #c5a1ec 30%, #7945d4); color: #fff;}
+    .slc{background: linear-gradient(-45deg, #158881 30%, #00403C); color: #fff;}
+    .bb .circle{position: relative;}
+    .bb .circle::after{
+        position: absolute;
+        content:"";
+        top:50%;
+        left:10%;
+        width:80%;
+        height: 1px;
+        background-color: #19294c;}
+        .bb .circle.slc::after{background-color: #fff;}
+        .bb .circle.usd::after{background-color: #fff;}
+#main{
+    position: relative;
+    height: 822px;
+    width: 1631px;
+    margin: auto;}
+    #l-c,#ul-c,#ur-c,#c-c,#r-c,#b-c,#br-c,#bl-c,.c-c,#um-c,#ur-c,#ml-c,#r-c,#bl-c,#br-c,#u-c,#l-c{
+        position: absolute;}
+
+    #A1 #l-c{
+        top: 73px;
+        left: 0;}
+        #A1 #ul-c{
+            display: flex;
+            top: 7%;
+            left: 5.6%;}
+            #A1 #ur-c{
+                display: flex;
+                top: 6%;
+                right: 19.8%;}
+                #A1 #c-c{
+                    top: 15.5%;
+                    left: 4%;}
+                    #A1 #r-c{
+                        top: 7px;
+                        right: 0;}
+                        #A1 #b-c{
+                            display: flex;
+                            bottom: 2%;
+                            left: 6%;}
+                            #A1 #l-c .circle{margin: 30% 0;}    
+                            #A1 #ul-c .circle{margin: 0 10%;}
+                            #A1 #ur-c .circle{margin: 0 1%;}
+                            #A1 #ur-c .forth{margin-right: 10%;}
+                            #A1 #r-c .circle{
+                                margin: 7.5% 0;
+                                width: 53px;
+                                height: 53px; }
+                                #b-c .eigth{margin-right: 5%;}
+                                #b-c .forteenth{margin-right: 5%;}
+    #A2 #l-c{
+        top: 120px;
+        left: 0;}
+        #A2 #ul-c{
+            display: flex;
+            top: 5.8%;
+            left: 15.6%;
+            width: 39%;}
+            #A2 #ur-c{
+                display: flex;
+                top: 5.8%;
+                right: 7.8%;
+                width: 39%;}
+                #A2 #c-c{
+                    top: 12.5%;
+                    left: 8%;}
+                    #A2 #r-c{
+                        top: 30px;
+                        right: 0;}
+                        #A2 #b-c{
+                            display: flex;
+                            bottom: 6%;
+                            left: 46%;
+                            width: 43%;}
+                            #A2 #l-c .frame .circle:last-child{margin-top:0;}
+                                #A2 #l-c .circle{margin: 14% 14% 14%;}
+                                    #A2 #ur-c .circle{margin: 0 1%;}
+                                        #A2 #r-c .circle{margin: 10.5%;}
+    #B #ul-c{
+        display: flex;
+        top: 3.8%;
+        left: 17.6%;
+        width: 39%;}
+        #B #ur-c{
+            display: flex;
+            top: 3.8%;
+            right: 3.8%;
+            width: 39%;}
+            #B #c-c{
+                top: 11%;
+                left: 10%;}
+                #B #br-c{
+                    width: 39%;
+                    display: flex;
+                    bottom: 3.5%;
+                    right: 3.8%;}
+                    #B #bl-c{
+                        display: flex;
+                        left: 17.6%;
+                        width: 39%;
+                        bottom: 3.5%;}
+
+    #B1 #l-c{
+        top: 159px;
+        left: 124px;}
+        #B1 #r-c{
+            top: 159px;
+            right: 123px;}
+            #B1 #c-c{
+                top: 27px;
+                left: 230px;
+                width: 1186px;}
+    #B2 #l-c{
+        top: 8%;
+        left: 5%;}
+        #B2 #r-c{
+            top: 14%;
+            right: 0;}
+            #B2 .c-c{
+                width: 1486px;
+                left: 40px;
+                display: flex;}
+                #B2 #c-c1{
+                    top: 15%;}
+                    #B2 #c-c2{
+                        top: 40%;}
+                        #B2 #c-c3{
+                            top:74%;}
+                            #B2 #ul-c{
+                                width: 33%;
+                                display: flex;
+                                top: 8%;
+                                left: 36%;}    
+
+        #B3 #r-c{
+            top: 7%;
+            right: 0;}
+            #B3 .c-c{
+                width: 1486px;
+                left: 40px;
+                display: flex;}
+                #B3 #c-c1{
+                    top: 11%;}
+                    #B3 #c-c2{
+                        top: 36%;}
+                        #B3 #c-c3{
+                            top:70%;
+                            left: 17.5%;}
+                            #B3 #ul-c{
+                                display: flex;
+                                top: 8%;
+                                left: 36%;}
+
+
+
+    #c-c{
+        width: 1466px;
+        display: flex;
+        flex-wrap: wrap;}
+        #A1 #c-c{justify-content: space-between;}
+        #A2 #c-c{justify-content: flex-start;}
+        #B #c-c{width: 1450px;}
+
+
+    .frame{
+        border-radius: 33px;
+        padding: 0.1%;
+        display: flex;
+        flex-wrap: wrap;}     
+        .frame-4{
+            border-radius: 33px;
+            display: flex;
+            flex-wrap: wrap;}          
+            .frame-4 .circle{
+                margin:9px;} 
+                .frame-4 .circle:nth-of-type(3),
+                .frame-4 .circle:nth-of-type(4){
+                    margin-top: 0;}   
+            .frame-2{
+                border-radius: 33px;
+                padding: 1% 2%;}     
+                .frame-2 .circle{
+                    margin:7px 0;}  
+                    .frame-2 .circle:last-child{
+                        margin-top: 0;}
+
+        #A1 .frame, #A2 .frame{background-color: rgba(47,78,147,.5);}
+        #B .frame, #B1 .frame, #B2 .frame, #B3 .frame, #B4 .frame{background-color: rgba(0,147,134,.4);}    
+        .c .frame-2,.c .frame-4{background-color: rgba(216,106,80,.4);}    
+
+        .frame .circle{
+            margin: 4%; }
+            .frame .circle:nth-of-type(4),
+            .frame .circle:nth-of-type(5),
+            .frame .circle:nth-of-type(6){
+                margin-top: 0;}
+                
+            #B1 .frame .circle:nth-of-type(3),
+            #B1 .frame .circle:nth-of-type(4),
+            #B1 .frame .circle:nth-of-type(5),
+            #B1 .frame .circle:nth-of-type(6){
+                    margin-top: 7%;}
+                
+            #A1 .frame{
+                margin: 2% 1.5%;
+                width: 15%;}
+                #A1 .frame:nth-of-type(3),
+                #A1 .frame:nth-of-type(8),
+                #A1 .frame:nth-of-type(13){
+                    margin: 2% 6%;}
+            #A2 #l-c .frame{
+                width: 68%;
+                margin-bottom: 10%;}
+            #A2 #c-c .frame{
+                margin: 2% 0 0 3%;
+                width: 14.8%;}
+            #A2 #r-c .frame{
+                margin-bottom: 10%;
+                width: 62%;
+                padding: 1.5%;}
+            #A2 #c-c .m17{margin-left: 17%; }
+            #B #c-c .m17{margin-left: 12%; }
+
+            #A2 #ul-c .frame,#A2 #ur-c .frame{
+                margin: 0 1.5%;
+                width: 21%;
+                padding: 0.7%;}
+            #A2 #b-c .frame{
+                padding: 0.7%;
+                margin: 0 1.5%;
+                width: 19%;}
+            #A2 #ul-c .circle,
+            #A2 #ur-c .circle,
+            #A2 #b-c .circle{
+                    margin: 1%; }
+            #A2 #ul-c .frame .circle,
+            #A2 #ur-c .frame .circle,
+            #A2 #b-c .frame .circle{
+                margin: 3% 4.5%; }
+            #A2 #b-c .frame.tilt{
+                transform: rotateZ(-30deg);
+                position: absolute;
+                right: -10px;
+                top: -24px;}
+            #B .frame{    
+                margin: 1% 0 0 2%;
+                width: 17.8%;}
+            #B #c-c .frame .circle{
+                margin-right:6%;
+                margin-left:6%;}
+            #B #ur-c .circle,
+            #B #br-c .circle{
+                margin: 0 1.5%;}
+            #B #ul-c .circle,
+            #B #bl-c .circle{
+                margin: 0 1.5%;}
+
+            #B1 .frame{
+                padding: 0.3%;
+                margin: 1% 4% 0;
+                width: 11.1%;}
+                #B1 #c-c .frame .circle{margin: 9% 4%;}
+                    #B1 #l-c .circle, #B1 #r-c .circle{margin: 20px 0;}
+
+                    #B2 #c-c1 .frame{
+                        padding: 0.3%;
+                        margin: 1% 0 0 2%;}
+                        #B2 #c-c2 .frame{
+                            padding: 0.3%;
+                            margin: 1% 0 0 2%;}
+                            #B2 #c-c3 .frame{
+                                padding: 0.3%;
+                                margin: 1% 0 0 2%;
+                                width: 14.1%;}
+                            #B2 .frame .circle{margin:2% 3.65%;}
+                            #B2 #c-c3 .frame.m17{
+                                margin: 1% 0 0 35%;}
+                                #B2 #r-c .circle{margin:30% 0;}
+                                #B2 #ul-c .circle{margin:0 1.5%;}
+
+                                
+                #B3 #c-c1 .frame{
+                    padding: 0.3%;
+                    margin: 1% 0 0 2%;}
+                    #B3 #c-c2 .frame{
+                        padding: 0.3%;
+                        margin: 1% 0 0 2%;}
+                        #B3 #c-c3 .frame{
+                            padding: 0.3%;
+                            margin: 1% 0 0 2%;
+                            width: 14.1%;}
+                        #B3 .frame .circle{margin:2% 3.65%;}
+                        #B3 #c-c3 .frame.m17{
+                            margin: 1% 0 0 18.5%;}
+                            #B3 #r-c .circle{margin:30% 0;}
+                            #B3 #ul-c .circle{margin:0 3%;} 
+
+                #C1 #r-c{
+                    display: flex;
+                    top: 31%;
+                    right: 10%;
+                    width: 18%;}
+                    #C1 #r-c .frame-2,
+                    #C1 #r-c .frame-4{
+                        margin: 0 3%;}
+                    #C1 #r-c .frame-2{}
+                    #C1 #r-c .frame-4{
+                        width: 50%;}
+                    #C1 #bl-c{
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 45%;
+                        top:52%;}
+                        #C1 #bl-c .frame-2,
+                        #C1 #bl-c .frame-4{
+                            height: fit-content;
+                            margin: 1%;}
+                        #C1 #bl-c .frame-2{
+                            width: 7.7%;
+                            padding: 1%;}
+                        #C1 #bl-c .frame-4{
+                            width: 20%;}
+                        #C1 #br-c{
+                            width: 20%;
+                            bottom: 14%;
+                            right: 15%;}
+                            #C1 #br-c .frame-2{
+                                width: 17%;
+                                margin: -54px 0;
+                                transform: rotateZ(90deg); }
+                                #C1 #br-c .frame-2 .circle{
+                                    transform: rotateZ(-90deg); }           
+
+                                    #C1 #um-c{
+                                        top: 10%;
+                                        left: 35.3%;
+                                        width: 36%;
+                                        display: flex;
+                                        justify-content: space-evenly;}
+                                        #C1 #um-c .frame-4:first-child{
+                                            margin-right: 8%;}
+                                        #C1 #um-c .frame-4{
+                                            width: 25%;}
+                                        #C1 #ur-c{
+                                            top: 10%;
+                                            right: 0;
+                                            display: flex;
+                                            width: 18%;}
+                                            #C1 #ur-c .frame-2{
+                                                width: 19%;
+                                                margin: 0 3%;}
+                                            #C1 #ml-c{
+                                                align-items: flex-end;
+                                                width: 52%;
+                                                display: flex;
+                                                top: 30%;}
+                                                #C1 #ml-c .frame-2{
+                                                    width: 13.8%;
+                                                    margin: 0 0.8%;
+                                                    display: flex;
+                                                    padding: 1%;
+                                                    height: fit-content;}
+                                                    #C1 #ml-c .frame-2 .circle{
+                                                        margin: 0 0 0 6%;}
+                                                        #C1 #ml-c .frame-2 .circle:first-child{
+                                                            margin-left: 0;}
+                                                #C1 #ml-c .frame-4{
+                                                    margin: 0 1.2%; 
+                                                    width: 17.3%;}
+                #C2 #u-c{
+                    top: 7%;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    display: flex;
+                    width: 53%;}
+                    #C2 #u-c .circle{
+                        margin: 0.5% 1%;}
+                    #C2 #c-c{
+                        top: 17%;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        width: 84%;}
+                        #C2 #c-c .frame-4{
+                            width: 19.375%;
+                            margin: 0.5%;}
+                            #C2 #c-c .frame-4:nth-of-type(3),
+                            #C2 #c-c .frame-4:nth-of-type(7),
+                            #C2 #c-c .frame-4:nth-of-type(15){
+                                margin-left: 19%;}
+                                #C2 #c-c .frame-4:nth-of-type(9){
+                                    margin-left: -2%;}
+                                    #C2 #c-c .frame-4:nth-of-type(10){
+                                        margin-left: 5.5%;}
+                                        #C2 #c-c .frame-4:nth-of-type(11){
+                                            margin-left: 16.5%;}
+                            #C2 #c-c .frame-4 .circle{
+                                margin: 9px 17px;}
+            
+
+            #B4 #l-c{
+                top: 13%;
+                width: 98%;
+                display: flex;
+                flex-wrap: wrap;} 
+                #B4 #l-c .frame{
+                    width: 16%;
+                    margin: 1%;}  
+                    #B4 #l-c .frame .circle{
+                        margin: 3% 6%;}    
+                        #B4 #r-c{
+                            right: -3%;
+                            top: 4%;}      
+                            #B4 #r-c .circle{margin: 36% 0;}        
+                            #B4 #b-c{
+                                width: 49%;
+                                display: flex;
+                                bottom: 5.5%;
+                                right: 11%;}      
+                                #B4 #b-c .circle{margin: 0 1.5%;}                 
+/*入口*/       
+.tri{
+    display: block;
+    border: 18px solid #2f4e93;}
+    #A1 .tri,#A2 .tri{border: 18px solid #2f4e93;}
+    #B .tri,#B1 .tri,#B2 .tri,#B3 .tri,#B4 .tri{border: 18px solid #009389;}
+    .c .tri{border: 18px solid #d86a50;}
+    #A2 .tri, #A1 .tri{  /*down*/
+        border-bottom: 18px solid transparent;
+        border-right: 12px solid transparent;
+        border-left: 12px solid transparent;}
+    #B2 .tri, #B3 .tri, #B4 .tri{ /*right*/
+        margin-left: 10px;
+        border-bottom: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 12px solid transparent;}
+    #B .tri{ /*left*/
+        margin-right: 10px;
+        border-bottom: 12px solid transparent;
+        border-left: 12px solid transparent;
+        border-top: 12px solid transparent;}
+    #B1 .tri,.c .tri{ /*up*/
+        margin-right: 10px;
+        border-right: 12px solid transparent;
+        border-left: 12px solid transparent;
+        border-top: 12px solid transparent;
+        position: absolute;
+        top: -10px;
+        left: -34px;}
+    
+
+    #A1 .entry,#A2 .entry{color: #2f4e93;}
+
+    .entry{
+        display: flex;
+        position: absolute;
+        color: #2f4e93;
+        font-size: 22px;
+        font-weight: 600;}
+        #A1 .entry,#A2 .entry{color: #2f4e93;}
+        #B .entry,#B1 .entry,#B2 .entry,#B3 .entry,#B4 .entry{color: #009389;}
+        .c .entry{color: #d86a50;}
+        .e1{
+            top: 30%;
+            left: -18%;}
+        .e2{
+            top: -40px;
+            right: -32%;}
+        .e3{
+            left: -25%;
+            top: 33%;}
+        .e4,.e5{
+            top: 15px;
+            right: -50px;}
+        .e6{
+            bottom: 0;
+            right: 150px;}
+        .e7{
+            top: 48%;
+            left: -5%;}
+        .e8{
+            top: 140%;
+            left: -5%;}
+        .e9{
+            top: 100%;
+            left: -65%;}
+            

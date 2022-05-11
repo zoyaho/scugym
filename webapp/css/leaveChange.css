@@ -1,0 +1,128 @@
+#leaveChange{
+    position: relative;
+    background-color: #f4ceab;
+    margin: auto;
+    width: 100%;
+    max-width: 1920px;
+    height: 1080px;}
+    #leaveChange #left::before, #leaveChange #left::after {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        width: 50px;
+        height: 100%;
+        top: 0;}
+        #leaveChange #left::before {
+            left: 0;
+            background-image: linear-gradient(to right, rgba(241,193,148,.5) 4%, rgba(243,202,164,.0) 78% );}
+            #leaveChange #left::after {
+                right: 0;
+                background-image: linear-gradient(to left, rgba(241,193,148,.5) 4%, rgba(243,202,164,.0) 78% );}
+/*TIME*/
+#time-wrap{
+    position: absolute;
+    right: 11rem;
+    bottom:5rem;
+    font-style: normal;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 4rem;}
+    #time{
+        display: inline-block;
+        position: relative; }
+        #time::before, #time::after{
+            position: absolute;
+            content: "";
+            height: 2px;
+            left: 0;
+            background-color: #19294c;  }
+            #time::before{
+                width: 110%;
+                top:99%;}
+            #time::after{
+                width: 135%;
+                top:199%;}
+/*MIDDLE*/
+#middle, #right{
+    width: 1364px;
+    height: 645px;
+    color: #19294c;
+    overflow: hidden;
+    position: absolute;}
+#middle{
+    left: 0;
+    bottom: 0;}
+    #right{
+        right: 0;
+        top: 0;}
+        #leave-wrap, #change-wrap{
+            box-shadow: 0px 0px 15px 5px rgba(241,193,148,1);
+            text-align: center;
+            width: 1042px;
+            height: 1042px;
+            border: 5px solid #fff;
+            border-radius: 50%;}
+            #leave-wrap{
+                background: linear-gradient( -45deg, rgba(255,255,255,.0) 27%, rgba(255,255,255,1) ,rgba(255,255,255,.0)82%);
+                margin: 9% auto 0; }
+                #change-wrap{
+                    background: linear-gradient( -45deg, rgba(255,255,255,.0) 11%, rgba(255,255,255,1) ,rgba(255,255,255,.0)75%);
+                    margin:0 auto 50%; }
+                    #right .animation{
+                        position: relative;
+                        bottom: 83%; }
+            #leave-wrap h1, #change-wrap h1{
+                font-size: 5rem;
+                font-weight: 600;
+                letter-spacing: 20px;}
+                #change-wrap h1{
+                    margin-left: 20px;}
+                #leave-wrap h1{
+                    padding-top: 8.5%;}
+                #leave-wrap h2, #change-wrap h2{
+                    font-size: 2.5rem;
+                    line-height: 1.5;}
+                    #leave-wrap h2{
+                        margin-left: -20px;}
+
+/*ICON*/
+#change-icon, #leave-icon{
+    margin: auto;
+    width: 28%;}
+    #change-icon{
+        padding-left: 0.3%;
+        margin-top: 53%;}
+        #leave-icon{
+            padding-left: 2%;}
+
+#change-icon  .cls-1,#change-icon  .cls-2{fill:none;}
+#change-icon  .cls-1{stroke:#19294c;stroke-linecap:round;stroke-linejoin:round;stroke-width:8px;}
+
+
+#leave-icon .cls-1,#leave-icon .cls-6{fill:none;}
+#leave-icon .cls-2{isolation:isolate;}
+#leave-icon .cls-3{clip-path:url(#clip-path);}
+#leave-icon .cls-4{opacity:0.5;mix-blend-mode:overlay;}
+#leave-icon .cls-5{fill:#f9e6d4;}
+#leave-icon .cls-6{stroke:#19294c;stroke-linecap:round;stroke-linejoin:round;stroke-width:8px;}
+
+#l-suc .cls-1{isolation:isolate;}
+#l-suc .cls-2{mix-blend-mode:multiply;}
+#l-suc .cls-3{fill:#00948a;}
+#l-suc .cls-4{fill:#fff;}
+#l-suc .cls-5,#l-suc .cls-6{fill:none;}
+#l-suc .cls-5{stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:8px;}
+
+/*ANIMATE*/
+#middle-a{
+    /*background-image: url(../images/gif/animate-big.gif);*/
+    z-index: -2;
+    background-repeat: no-repeat;
+    background-size: 229%;
+    background-position: -467px -893px;}
+    #right-a{
+        /*background-image: url(../images/gif/animate-big.gif);*/
+        z-index: -2;
+        background-repeat: no-repeat;
+        background-size: 229%;
+        background-position: -467px -893px;}

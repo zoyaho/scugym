@@ -1,0 +1,500 @@
+#login, #mobile-index{
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    background-color: #f4ceab;}
+/*Nav Adjustment*/    
+
+
+#aside{
+    position: absolute;
+    height: 272px;}
+    .logo1 {
+        width: 100%;
+        height: unset;
+        padding-bottom: 22%;}
+.login-wrap{
+    color: #19294c;
+    padding: 2%;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 7% auto 0;
+    background: rgba(255,255,255,.5);
+    border-radius: 5px;
+    box-shadow: 0px 0px 26px 11px rgba(241,193,148,1);}
+#login-title{
+    font-weight: 600;
+    letter-spacing: 5px;
+    position: relative;
+    margin-bottom: 2%;
+    padding: 3% 0;
+    text-align: center;
+    font-size: 1.094375rem;}
+    #login-title span{
+        margin-left: 2px;
+        font-size: .875rem;}
+#login-title::after{
+    position: absolute;
+    content:"";
+    width: 105%;
+    padding-bottom: 0.5%;
+    background-color: #F4CEAB;
+    bottom: 0;
+    left: -2.5%;}   
+
+#login-inputs li{
+    margin: 9% 0 0 5%;
+    font-weight: 600;
+    position: relative;}
+    #login-inputs li:nth-of-type(1)::after,
+    #login-inputs li:nth-of-type(2)::after{
+        position: absolute;
+        content: "";
+        width: 82%;
+        padding-bottom: 1px;
+        background-color: #19294c;
+        bottom: -20%;
+        left: 11%;}
+#login-inputs .icon{
+    display: inline-block;
+    width: 10%;
+    padding-bottom: 9%;
+    vertical-align: sub;}
+    .account-icon{background-image: url(../images/icon/account-icon.png);}
+    .password-icon{background-image: url(../images/icon/password-icon.png);}
+    .verifycode-icon{background-image: url(../images/icon/verifycode-icon.png);}
+#login-inputs input{
+    margin-left: 1%;
+    color: #19294c;
+    font-size: 1.3125rem;
+    width: 53%;
+    background: transparent;
+    border: none;}
+    #login-inputs input:focus{outline: none;}
+#code{
+    padding-bottom: 22%;
+    width: 62%;
+    margin: 5% 0 5% 11%;
+    /*border: 1px solid #19294c;*/
+    
+    }
+    #login-inputs #login-btn{
+        outline: none;
+        position: absolute;
+        width: 30%;
+        right: -2%;
+        top: 37%;
+        background-color: transparent;
+        border: none;}
+    #login-btn .cls-1,#login-btn .cls-3{fill:none;}
+    #login-btn .cls-2{font-size:16px;fill:#00b5a9;letter-spacing:0.1em;}
+    #login-btn .cls-2,#login-btn .cls-4{font-family:NotoSansCJKtc-Bold-B5pc-H, Noto Sans CJK TC;}
+    #login-btn .cls-3{stroke:#00b5a9;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}
+    #login-btn .cls-4{font-size:8px;fill:#00b4aa;letter-spacing:0.01em;}
+    #login-btn .cls-5{letter-spacing:0.05em;}
+
+#corner-animate{
+    padding-bottom: 53%;
+    width: 100%;
+    background-image: url(../images/bg/mobile-bg.jpg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;}
+    #position{
+        z-index: -1;
+        width: 65%;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        right: 0;}
+
+/*===================借用紀錄===================*/
+.welcome{
+    font-weight: 500;
+    margin-left: 4%;
+    font-size: 1rem;
+    text-decoration: underline;}
+#wrap{
+    border-radius: 15px;
+    width: 88.010417%;
+    margin: 4% auto;
+    color: #19294c;}
+    .title{
+        cursor: pointer;
+        font-weight: 700;
+        width: 50%;
+        text-align: center;
+        font-size: 1.0625rem;
+        letter-spacing: .56875rem;
+        padding: 0 0 2%;}
+        #login .title{color: #f9e6d4;}
+        #login .title.fired{
+            border-color: #19294c;
+            color: #19294c;}
+    .title span{
+        vertical-align: middle;
+        letter-spacing: .125rem;
+        font-size: .625rem;}
+#login .c-container{
+    display: none;
+    box-sizing: border-box;
+    background: rgba(255,255,255,.5);
+    border-radius: 5px;}
+    #login .c-container.fired{
+        display: block;}
+    #login .c-container table{width: 100%;}
+    #login .c-container thead th{
+        font-size: .6875rem;
+        letter-spacing: .1rem;
+        text-align: left;
+        width: 50%;
+        padding: 4%;
+        box-sizing: border-box;}
+    #login .c-container tbody tr{
+        border-bottom: 2px solid #f4ceab;}
+        #login .c-container tbody td{
+            position: relative;}
+    #login .c-container tbody tr .t{
+        position: absolute;
+        top: 12%;
+        letter-spacing: .125rem;
+        font-size: .856875rem;}
+        #login .c-container tbody tr .r{
+            font-weight: 600;
+            letter-spacing: .125rem;
+            font-size: .97375rem;}
+            #login .c-container tbody tr .e,
+            #login .c-container tbody tr .e2{
+                letter-spacing: .0625rem;
+                font-size: .856875rem;}
+                #login .c-container tbody tr .e{
+                    margin-top: 3%;}
+                    #login .c-container tbody tr .e2{
+                        margin-top:2%;}
+    #login .c-container tbody td{ 
+        padding: 10% 0 6% 4%;}
+    #login .c-container tbody tr{
+        display: block;
+        width: 100%;}
+    #login .c-container tbody {
+        overflow-x: hidden;
+        width: 200%;
+        height: 59vh;
+        display: block;}
+    #login .c-container tbody td {
+        display: inline-block;}
+    #login .c-container tbody tr td:nth-of-type(1){    width: 46.5%;}
+    #login .c-container tbody tr td:nth-of-type(2){    width: 44%;}
+   
+
+/*===================手機首頁===================*/
+
+.area-pic span{
+    display: inline-block;
+    width: 100%;}
+    .a{background-image: url(../images/section/a.png);}
+    .b{background-image: url(../images/section/b.png);}
+    .c{background-image: url(../images/section/c.png);}
+    .c2{background-image: url(../images/section/c2.png);}
+
+.li-wrap{
+    border-bottom: 3px solid #f4ceab;}
+
+#mobile-index .c-container{
+    border-radius: 8px;}
+
+/*=========================================*/
+/*=========================================*/
+/*=========================================*/
+/*===================RWD===================*/
+/*=========================================*/
+/*=========================================*/
+/*=========================================*/
+/*=========================================*/
+
+@media (max-width:1024px){ 
+
+#nav{
+    display: block;
+    padding: 0;}
+#nav-logo {
+    width: 70%;
+    margin: auto;
+    border-radius: 0 0 6px 6px;}
+#nav #time-wrap {
+    font-size: .875rem;
+    position: unset;
+    display: block;
+    width: 100%;
+    padding: 4% 0;}
+#aside {
+    text-align: center;
+    top: 107%;
+    width: 40%;
+    left: 0;
+    right: 0;
+    font-size: 1.090625rem;
+    margin: auto;
+    position: absolute;
+    height: unset;
+    transform: unset;
+    writing-mode: unset;}
+    #aside::before, #aside::after {
+        left: unset;
+        top: 50%;
+        width: 30%;
+        height: 1px;}
+        #aside::before {left: -35%;}
+        #aside::after {right: -30%;}
+/*===================借用紀錄===================*/
+.welcome{
+    margin-top: 3%;}
+#c-title{display: flex;}
+.title{border-bottom: 3px solid #f9e6d4;}
+#login .c-container{margin-top: 5%;}
+#login .c-container tbody{
+    background-color: rgba(255,255,255,.3);}
+#mobile-index .title{color: #f9e6d4;}
+#mobile-index .title.fired{
+    border-color: #19294c;
+    color: #19294c;}
+
+    #login .c-container thead tr{
+        border-bottom: 2px solid #f4ceab;}
+/*==================手機首頁=============*/
+.area-pic{
+    width: 46%;
+    padding: 5%;}
+.li-wrap{
+    display: flex;}
+.ul-wrap li{
+    font-size: 0.85rem;
+    margin: 4% 0 9%;}
+.ul-wrap li:first-child{
+    font-size: 1.1rem;}
+.ul-wrap .en{
+    font-size: .6875rem;}
+.ul-wrap .big-number{
+    font-size: 1.375rem;
+    font-weight: 600;}
+
+#mobile-index .c-container{
+    box-shadow: 0px 0px 14px 0px rgba(241,193,148,1);
+    background-color: #f9e6d4;
+    display: none;
+    margin-top: 5%;}
+#mobile-index .c-container.fired{
+    display: block;}
+
+.ul-wrap{padding-top: 6%;}
+ 
+.title.fired{
+    animation: jumping .5s ;
+}
+
+@keyframes jumping{
+    0%{transform: translateY(0%);}
+    33%{transform: translateY(-5%);}
+    66%{transform: translateY(5%);}
+    100%{transform: translateY(0%);}
+}
+
+
+.area-pic span{
+    padding-bottom: 84%;}
+}/*==================End of max-width:1280px=============*/
+
+@media (min-width:1025px){  
+    #login{background-color: #F3CBAB;}  
+    #nav-logo {
+    width: 24%;}
+    #nav #time-wrap {
+        font-size: 1.2rem;
+        width: 52%;
+        text-align: left;
+        padding: 61px 1%;}
+
+        .login-wrap {
+            bottom: 0;
+            height: 64vh;
+            top: 10%;
+            position: fixed;
+            left: 0;
+            right: 0;
+            width: 30%;}
+            #corner-animation{
+                padding-bottom: 100%;
+                width: 100%;
+                /*background-image: url(../images/gif/indexanimate.gif);*/
+                background-size: contain;
+                background-position: right top;
+                background-repeat: no-repeat;}
+            #position{
+                bottom: -52%;
+                right: -23%;
+                width: 50%;}
+                
+    #login-inputs #login-btn{
+        cursor: pointer;}
+        
+    #login-btn:hover .cls-2{fill:#19294c;}
+    #login-btn:hover .cls-3{stroke:#19294c;}
+    #login-btn:hover .cls-4{fill:#19294c;}
+
+
+    
+/*===================借用紀錄===================*/
+#wrap{
+    box-shadow: 0px 0px 14px 0px rgba(241,193,148,1);
+    overflow-x: hidden;
+    width: 94.01041666666667%;
+    margin: 4% auto;
+    background-color: #faecde;
+    display: flex;
+    color: #19294c;}
+    #login #wrap{
+        height: 71vh;}
+    .title{
+        padding: 26%;
+        letter-spacing: .56875rem;
+        writing-mode: vertical-lr;
+        position: absolute;
+        height: 40%;}
+        #login .title{font-size: 2.375rem;}
+        #mobile-index .title{font-size: 2rem;}
+        #login .title:hover{
+            color: #19294c;}
+        #login .title {
+            color: #f2a45a;
+            background-color: #f9e1c7; }
+        #login .title.fired{
+            color: #19294c;
+            background-color: #faecde;}
+            #login .activity{box-shadow: inset -10px -10px 19px -9px rgba(241,193,148,1);}
+            #login .violation{box-shadow: inset -10px 10px 19px -9px rgba(241,193,148,1);}
+            #login .fired.activity{box-shadow: none;}
+            #login .fired.violation{box-shadow: none;}
+        
+    .title span{
+        vertical-align: middle;
+        letter-spacing: .125rem;
+        font-size: 1rem;}
+#login .c-container{
+    overflow: hidden;
+    width: 88%;
+    height: 94%;}
+#c-title{
+    width: 7.895833%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    display: block;}
+#login .c-container{   
+    margin-left: 2%;
+    background: #faecde;
+    margin-top: 0;}
+#c-title .activity{
+    border-radius: 15px 0 0 0;}
+#c-title .violation{
+    border-radius: 0 0 0 15px;}
+    #login #c-title .violation{top: 52%;}
+    #mobile-index #c-title .violation{top: 50%;}
+#mobile-index #c-title .violation{
+    margin-top: -1px;
+    background-color: #f9e6d5;
+    border-top: 3px solid #F3CBAB; }
+#login .c-container tbody {background-color: rgba(255,255,255,.8);}
+#login .c-container thead th {
+    font-size: 1.3875rem;}
+#login .c-container tbody tr .t {
+    font-size:  1.3875rem;}
+#login .c-container tbody tr .r {
+    font-size: 1.57375rem; }  
+    #login .c-container tbody tr .e{
+        font-weight: 600;
+        font-size: 1.856875rem;}
+        #login .c-container tbody td {
+            padding: 5% 0 2% 4%;}
+            #login .c-container tbody tr .ac{
+                font-size: 1.556875rem;}
+                #login .c-container thead th {
+                    padding: 2% 4%;}
+
+
+
+/*===================手機首頁===================*/
+
+#mobile-index .title{pointer-events: none;}
+
+.area-pic{
+    width: 47%;
+    padding: 3% 5%;}    
+.li-wrap{
+    padding: 4% 2%;
+    border-left: 3px solid #F3CBAB;
+    width: 33.333333%;
+    display: flex;}   
+.c-container2 .li-wrap{
+    background-color: #f9e6d5;
+    border-bottom: none}
+.ul-wrap{
+    padding-top: 4%;}
+.ul-wrap li{
+    font-size: 1.375rem;
+    margin: 4% 0 9%;}
+.ul-wrap li:first-child{
+    font-size: 1.75rem;}
+.ul-wrap .en{
+    font-size: 1.1875rem;}
+.ul-wrap .big-number{
+    font-size: 2.5rem;
+    font-weight: 600;}
+#mobile-index .c-container {
+    width: 100%;}
+#mobile-index .c-ul-wrap {
+    display: flex;}
+#c-container-wrap{
+    width: 100%;}
+
+    .area-pic span{
+        padding-bottom: 92%;}
+
+}/*==================End of min-width:1281px=============*/
+
+
+@media (max-width:1600px) and (min-width:1025px){ 
+    .li-wrap {display: block;}
+    .area-pic {
+        width: 100%;
+        padding: 0;}
+    .ul-wrap {
+        margin: auto;
+        width: 56%;}
+    .ul-wrap li {    
+        margin: 4% 0 13%;}
+    .area-pic span {
+        padding-bottom: 51%;}
+}
+
+/*iPad Pro*/
+@media (max-width:1024px) and (min-width:769px){
+
+}
+/*iPad*/
+@media (max-width:768px) and (min-width:415px){ 
+
+}
+/*iPhoneX, iPhone678, plus*/
+@media (max-width:414px) and (min-width:321px){
+
+}
+/*iPhone5*/
+@media (max-width:320px){
+}
+
+@media (max-width:1279px) and (min-width:768px){  
+}
+
+    

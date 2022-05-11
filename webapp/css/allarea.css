@@ -1,0 +1,82 @@
+
+
+#allarea{
+  width: 100%;
+  max-width: 1920px;
+  height: 1080px;
+  margin: auto;
+  background-color: #F4CEAB;}
+#position{position: relative;
+overflow: hidden;}
+  #corner-animate{
+    /*background-image: url(../images/gif/indexanimate.gif);*/
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: -21%;
+    right: -3%;
+    z-index: -1;}
+
+/*底部資訊*/
+
+
+#allarea-bottom-info {
+    height: 76px;
+    border-top: 2px solid #19294C;
+    border-bottom: 2px solid #19294C;
+    margin-top: 20px;
+  }
+    #allarea-bottom-info .bottom-info-list {
+      list-style-type: none;
+      margin: 14px 0 0;
+      padding: 0;
+    display: flex; }
+      #allarea-bottom-info .bottom-info-list li {
+        display: block;
+        margin-right: 14px; }
+        #allarea-bottom-info .bottom-info-list li ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0; }
+          #allarea-bottom-info .bottom-info-list li:nth-child(2),
+          #allarea-bottom-info .bottom-info-list li:nth-child(3),
+          #allarea-bottom-info .bottom-info-list li:nth-child(4){
+            margin-top: 4px;
+          }
+
+          #allarea-bottom-info .bottom-info-list li ul li {
+            display: block; }
+          #allarea-bottom-info .bottom-info-list li ul .bottom-info-list-cht {
+            color: #231815;
+            margin-bottom: 3px; }
+          #allarea-bottom-info .bottom-info-list li ul .big {
+            font-size: 25px; }
+          #allarea-bottom-info .bottom-info-list li ul .bottom-info-list-eng {
+            color: #727171; }
+
+/*座位資訊*/
+.allarea-info {
+  position: absolute;
+  bottom: -14%; }
+  .allarea-info ul {
+    padding: 7px 0 0 12px;}
+         .allarea-info ul li {
+            display: inline-block; }
+       .allarea-info .allarea-infocht {
+          font-size: 25px;
+          color: #5c564a; }
+         .allarea-info .allarea-infocht li {
+            padding: 0 13px 0 6px;}
+            .allarea-info .allarea-infocht li:first-child{
+              padding-left: 0;}
+              .allarea-info .allarea-infocht li:last-child{
+                padding-right: 0;}
+       .allarea-info .allarea-infoeng {
+          font-size: 15.2pt;
+          color: #666666; }
+         .allarea-info .allarea-infoeng li {
+            padding-right: 19px; }
+            .allarea-info .allarea-infoeng li:last-child {
+               padding-right: 0; }
+            .l-r{border-right:1px solid #333333;}
+  
