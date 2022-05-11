@@ -1,12 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>scugym</display-name>
+  <display-name>dispatch</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
     <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
     <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <servlet-name>enter</servlet-name>
+    <jsp-file>/scumanage/login.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>enter</servlet-name>
+    <url-pattern>/scumanage/enter</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>main</servlet-name>
+    <jsp-file>/scumanage/main.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>main</servlet-name>
+    <url-pattern>/scumanage/main</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>Uploadpath</param-name>
+    <param-value>F:\\scuimage\\</param-value>
+  </context-param>
+  <context-param>
+    <param-name>uploadImage</param-name>
+    <param-value>F:\\scuimage\\images\\</param-value>
+  </context-param>
+  <context-param>
+    <param-name>uploadFile</param-name>
+    <param-value>F:\\scuimage\\files\\</param-value>
+  </context-param>
+  <context-param>
+    <param-name>url_image</param-name>
+    <param-value>http://192.168.0.103:8080/SCIMG/</param-value>
+  </context-param>
+    <context-param>
+    <param-name>temppath</param-name>
+    <param-value>C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5\\webapps\\scugym</param-value>
+  </context-param>
+  <context-param>
+    <param-name>tempurl</param-name>
+    <param-value>http://192.168.0.103:8080/scugym/scumanage/</param-value>
+  </context-param>
+   <context-param>
+    <param-name>doorurl</param-name>
+    <param-value>http://192.168.0.103:8080/</param-value>
+  </context-param>
+  <context-param>
+    <param-name>copypath</param-name>
+    <param-value>C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5\\webapps\\scugym</param-value>
+  </context-param>
+  <context-param>
+    <param-name>recordpath</param-name>
+    <param-value>C:\\scuexcel\\</param-value>
+  </context-param>
+  
+  <filter>
+    <filter-name>ResponseHeaderFilter</filter-name>
+    <filter-class>ResponseHeaderFilter</filter-class>
+    <init-param>
+      <param-name>Cache-Control</param-name>
+      <param-value>private,no-cache,no-store</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>ResponseHeaderFilter</filter-name>
+    <url-pattern>*.js</url-pattern>
+  </filter-mapping>
+ <!-- 
+ <servlet>
+    <servlet-name>Schedual_Timer</servlet-name>
+    <servlet-class>wisoft.Schedual_Timer</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+   -->
+<session-config>
+<session-timeout>120</session-timeout>
+</session-config>
 </web-app>

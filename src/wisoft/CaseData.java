@@ -886,7 +886,7 @@ public class CaseData extends getData {
     } else {
       realid = st9;
     } 
-    getData1 gdt = new getData1();
+    //getData1 gdt = new getData1();
     rst.getReaderByCard(realid);
     if (rst.showCount() > 0) {
       if (st0.equals("0")) {
@@ -895,10 +895,12 @@ public class CaseData extends getData {
             "',name='" + st4 + "',type='" + st5 + "'," + "deaprt_1='" + st6 + "',deaprt_2='" + st7 + "'," + 
             "year='" + st8 + "',cardid='" + st9 + "',createdate='" + todaytime() + "',hexcardid='" + 
             st14 + "'" + " where sysid='" + rst.showData("sysid", 0) + "' ");
+        /*
         gdt.updateData("update readerinfo set reader_status='" + st1 + "',msg='" + st2 + "'," + "uid='" + st3 + 
             "',name='" + st4 + "',type='" + st5 + "'," + "deaprt_1='" + st6 + "',deaprt_2='" + st7 + "'," + 
             "year='" + st8 + "',cardid='" + st9 + "',createdate='" + todaytime() + "',hexcardid='" + 
             st14 + "'" + " where sysid='" + rst.showData("sysid", 0) + "' ");
+        */
         ret = "MODY";
       } else {
         System.out.println("reader:2");
@@ -909,11 +911,14 @@ public class CaseData extends getData {
             rst.showData("sysid", 0) + "'");
         String enddateforscudesk = "";
         enddateforscudesk = util1.addYear(100, st12);
+        
+        /*
         gdt.updateData("update readerinfo set reader_status='" + st1 + "',msg='" + st2 + "'," + "uid='" + st3 + 
             "',name='" + st4 + "',type='" + st5 + "'," + "deaprt_1='" + st6 + "',deaprt_2='" + st7 + 
             "',year='" + st8 + "'," + "cardid='" + st9 + "',password='" + st10 + "' ,start_date='" + st11 + 
             "', " + "end_date='" + enddateforscudesk + "',note='" + st13 + "',hexcardid='" + st14 + "' where sysid='" + 
             rst.showData("sysid", 0) + "'");
+            */
         ret = "MODY";
       } 
     } else if (st0.equals("0")) {
@@ -925,18 +930,22 @@ public class CaseData extends getData {
             sysid + "','" + st1 + "'," + "'" + st2 + "','" + st3 + "','" + st4 + "','" + st5 + 
             "'," + "'" + st6 + "','" + st7 + "','" + st8 + "','" + st9 + "','" + todaytime() + "','" + 
             st14 + "') ");
+        /*
         gdt.updateData("insert into readerinfo (sysid,reader_status,msg,uid,name,type,deaprt_1,deaprt_2,year,cardid,createdate,hexcardid) values('" + 
             
             sysid + "','" + st1 + "'," + "'" + st2 + "','" + st3 + "','" + st4 + "','" + st5 + 
             "'," + "'" + st6 + "','" + st7 + "','" + st8 + "','" + st9 + "','" + todaytime() + "','" + 
             st14 + "') ");
+            */
         ret = "OK";
       } else {
         System.out.println("reader:3_1");
         updateData("update readerinfo set reader_status='" + st1 + "' where hexcardid='" + st14 + 
             "' and (type NOT LIKE '900%') ");
+        /*
         gdt.updateData("update readerinfo set reader_status='" + st1 + "' where hexcardid='" + st14 + 
             "' and (type NOT LIKE '900%') ");
+            */
         ret = "OK";
       } 
     } else if (st0.equals("1")) {
@@ -949,11 +958,13 @@ public class CaseData extends getData {
           todaytime() + "','" + st14 + "') ");
       String enddateforscudesk = "";
       enddateforscudesk = util1.addYear(100, st12);
+      /*
       gdt.updateData("insert into readerinfo(sysid,reader_status,msg,uid,name,type,deaprt_1,deaprt_2,year,cardid,password,start_date,end_date,note,createdate,hexcardid) values('" + 
           
           sysid + "','" + st1 + "'," + "'','" + st3 + "','" + st4 + "','" + st5 + 
           "'," + "'','','','" + st9 + "','" + st10 + "','" + st11 + "','" + enddateforscudesk + "','" + st13 + "','" + 
           todaytime() + "','" + st14 + "') ");
+          */
       ret = "OK";
     } else {
       System.out.println("reader:5");
@@ -964,23 +975,25 @@ public class CaseData extends getData {
           st0 + "'");
       String enddateforscudesk = "";
       enddateforscudesk = util1.addYear(100, st12);
+      /*
       gdt.updateData("update readerinfo set reader_status='" + st1 + "',msg='" + st2 + "'," + "uid='" + st3 + 
           "',name='" + st4 + "',type='" + st5 + "'," + "deaprt_1='" + st6 + "',deaprt_2='" + st7 + 
           "',year='" + st8 + "'," + "cardid='" + st9 + "',password='" + st10 + "' ,start_date='" + st11 + 
           "', " + "end_date='" + enddateforscudesk + "',note='" + st13 + "',hexcardid='" + st14 + "' where sysid='" + 
           st0 + "'");
+          */
       ret = "MODY";
     } 
     util1.closeall();
     rst.closeall();
-    gdt.closeall();
+    //gdt.closeall();
     return ret;
   }
   
   public void deleteReader(String st0, String st1) throws IOException, SQLException, InterruptedException {
     updateData("update readerinfo set del_mark='1' where sysid='" + st0 + "'");
-    getData1 gdt = new getData1();
-    gdt.updateData("update readerinfo set del_mark='1' where sysid='" + st0 + "'");
+    //getData1 gdt = new getData1();
+    //gdt.updateData("update readerinfo set del_mark='1' where sysid='" + st0 + "'");
   }
   
   public String SaveApply(String st0, String st1, String st2) throws IOException, SQLException, InterruptedException {
